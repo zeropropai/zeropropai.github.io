@@ -3,31 +3,14 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <article class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url | relative_url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
-
-    {{ post.content }}
-  </article>
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | relative_url }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: relative_url }}">Newer</a>
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
+<div class="page-content">
+  <strong>welcome to zeroprop :-)</strong><br><br>
+  <p>hey! i'm <a href="https://sohv.github.io">Sohan</a>, founder of zeroprop.</p>
+  <p>zeroprop is an <b>open-source first AI</b> research lab that aims to understand the true essence of machine intelligence.  We believe in conducting impactful research that translates into real, tangible impact. We work on problems in the following areas :
+  <ul>
+    <li><b>ai interpretability</b> - </li>
+    <li><b>alignment</b> - </li>
+    <li><b>reasoning</b> - </li>
+    <li><b>explainable ai</b> - </li>
+  </ul></p>
 </div>

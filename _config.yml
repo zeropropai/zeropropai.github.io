@@ -1,6 +1,5 @@
 # Setup
-title: Dark Poole
-url: https://getpoole.com
+title: Zeroprop.ai
 paginate: 1
 baseurl: ""
 permalink: pretty
@@ -41,8 +40,8 @@ version: 3.0.0
 
 # Navbar page list
 nav:
-  - title: Blog
-    url: /archive
+  #- title: Blog
+  #  url: /archive
 
   - title: About
     url: /about
